@@ -1,0 +1,22 @@
+{
+  "name": "bounce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ven0os/bounce.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ven0os/bounce.js/issues"
+  },
+  "homepage": "https://github.com/Ven0os/bounce.js#readme",
+  "dependencies": {
+    "bounce.js": "^0.8.2"
+  }
+}
