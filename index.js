@@ -21,4 +21,29 @@ bounce
     duration: 300,
     delay: 30,
   })
-  .applyTo(document.querySelectorAll(".animation-target"));
+  .applyTo(document.querySelector("#firstanim"));
+
+let bounce2 = new Bounce();
+bounce
+  .translate({
+    from: { x: 0, y: -300 },
+    to: { x: 0, y: 0 },
+    duration: 900,
+    stiffness: 4,
+  })
+  .scale({
+    from: { x: 1, y: 1 },
+    to: { x: 0.1, y: 2.3 },
+    easing: "sway",
+    duration: 800,
+    delay: 65,
+    stiffness: 2,
+  })
+  .rotate({
+    from: 0,
+    to: 360,
+    easing: "sway",
+    duration: 2400,
+    delay: 30,
+  })
+  .applyTo(document.querySelector("#secondanim"));
