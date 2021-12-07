@@ -26,7 +26,7 @@ bounce
 let bounce2 = new Bounce();
 bounce
   .translate({
-    from: { x: 0, y: -300 },
+    from: { x: 0, y: 300 },
     to: { x: 0, y: 0 },
     duration: 900,
     stiffness: 4,
