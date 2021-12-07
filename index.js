@@ -1,11 +1,5 @@
 let bounce = new Bounce();
 bounce
-  .translate({
-    from: { x: -300, y: 0 },
-    to: { x: 0, y: 0 },
-    duration: 600,
-    stiffness: 4,
-  })
   .scale({
     from: { x: 1, y: 1 },
     to: { x: 0.1, y: 2.3 },
@@ -24,13 +18,7 @@ bounce
   .applyTo(document.querySelector("#firstanim"));
 
 let bounce2 = new Bounce();
-bounce
-  .translate({
-    from: { x: 0, y: 300 },
-    to: { x: 0, y: 0 },
-    duration: 900,
-    stiffness: 4,
-  })
+bounce2
   .scale({
     from: { x: 1, y: 1 },
     to: { x: 0.1, y: 2.3 },
@@ -47,3 +35,21 @@ bounce
     delay: 30,
   })
   .applyTo(document.querySelector("#secondanim"));
+
+let bounce3 = new Bounce();
+bounce3
+  .skew({
+    from: { x: 0, y: 0 },
+    to: { x: 20, y: 0 },
+    easing: "bounce",
+    duration: 1800,
+    delay: 30,
+  })
+  .skew({
+    from: { x: 20, y: 0 },
+    to: { x: -20, y: 0 },
+    easing: "bounce",
+    duration: 3600,
+    delay: 30,
+  })
+  .applyTo(document.querySelector("#derniereanim"));
