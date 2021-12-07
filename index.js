@@ -43,7 +43,7 @@ bounce
     from: 0,
     to: 360,
     easing: "sway",
-    duration: 2400,
+    duration: 3600,
     delay: 30,
   })
   .applyTo(document.querySelector("#secondanim"));
